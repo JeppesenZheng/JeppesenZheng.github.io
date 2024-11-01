@@ -2,7 +2,7 @@
   "name": "online-blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://JeppesenZheng.github.io/JeppesenZheng.github.io",
+  "homepage": "https://JeppesenZheng.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
