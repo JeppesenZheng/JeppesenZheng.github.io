@@ -1,0 +1,109 @@
+:root {
+  --primary-color: #0a0a0a;  /* 更深的黑色背景 */
+  --secondary-color: #1a1a1a;  /* 稍浅的黑色，用于次要背景 */
+  --text-color: #ffffff;  /* 保持白色文字 */
+  --highlight-color: #00ffff;  /* 青色作为主要强调色 */
+  --accent-color: #ff00ff;  /* 品红色作为次要强调色 */
+  --background-color: #121212;  /* 深灰色背景 */
+  --card-background: #1e1e1e;  /* 卡片背景色 */
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--highlight-color);
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+  color: var(--highlight-color);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--highlight-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3);
+}
+
+.Footer {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+.typed-cursor {
+  opacity: 1;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--highlight-color) }
+}
+
+.typing-effect {
+  overflow: hidden;
+  border-right: .15em solid var(--highlight-color);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
