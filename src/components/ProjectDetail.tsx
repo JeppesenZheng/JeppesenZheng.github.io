@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import HSRProject from './projects/HSRProject';
+import LibrarySystemProject from './projects/LibrarySystemProject';
 
 const ProjectContainer = styled.div`
   min-height: 100vh;
@@ -28,7 +29,7 @@ const BackLink = styled(Link)`
 
 const projectComponents = {
   '1': HSRProject,
-  // 添加更多项目组件
+  '2': LibrarySystemProject,
 };
 
 function ProjectDetail() {
