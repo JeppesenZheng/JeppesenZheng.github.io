@@ -56,7 +56,7 @@ function ProjectCard({ id, title, summary }: ProjectCardProps) {
     <Card>
       <Title>{title}</Title>
       <Summary>{summary}</Summary>
-      <StyledLink to={`/project/${id}`}>查看详情</StyledLink>
+      <StyledLink to={`/project/${id}`}>View Details</StyledLink>
     </Card>
   );
 }

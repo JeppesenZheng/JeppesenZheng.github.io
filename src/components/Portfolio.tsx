@@ -47,18 +47,18 @@ const ProjectGrid = styled.div`
 `;
 
 const projects = [
-  { id: '1', title: '项目一', summary: '这是项目一的简短描述。这个项目展示了...' },
-  { id: '2', title: '项目二', summary: '这是项目二的简短描述。在这个项目中，我...' },
-  { id: '3', title: '项目三', summary: '这是项目三的简短描述。通过这个项目，我学习了...' },
+  { id: '1', title: 'Project One', summary: 'This is a brief description of project one. This project demonstrates...' },
+  { id: '2', title: 'Project Two', summary: 'This is a brief description of project two. In this project, I...' },
+  { id: '3', title: 'Project Three', summary: 'This is a brief description of project three. Through this project, I learned...' },
 ];
 
 function Portfolio() {
   return (
     <PortfolioContainer>
       <TopBar>
-        <BackButton to="/">返回</BackButton>
-        <Title>我的项目</Title>
-        <div style={{ width: '80px' }}></div> {/* 用于平衡布局 */}
+        <BackButton to="/">Back</BackButton>
+        <Title>My Projects</Title>
+        <div style={{ width: '80px' }}></div>
       </TopBar>
       <ProjectGrid>
         {projects.map((project) => (

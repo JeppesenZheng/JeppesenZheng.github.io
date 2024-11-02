@@ -38,9 +38,9 @@ const BackLink = styled(Link)`
 `;
 
 const projects = {
-  '1': { title: '项目一', content: '这是项目一的详细内容。在这个项目中，我...' },
-  '2': { title: '项目二', content: '这是项目二的详细内容。通过这个项目，我学习了...' },
-  '3': { title: '项目三', content: '这是项目三的详细内容。这个项目的主要目标是...' },
+  '1': { title: 'Project One', content: 'This is the detailed content of project one. In this project, I...' },
+  '2': { title: 'Project Two', content: 'This is the detailed content of project two. Through this project, I learned...' },
+  '3': { title: 'Project Three', content: 'This is the detailed content of project three. The main goal of this project was...' },
 };
 
 function ProjectDetail() {
@@ -48,14 +48,14 @@ function ProjectDetail() {
   const project = projects[id as keyof typeof projects];
 
   if (!project) {
-    return <ProjectContainer>项目不存在</ProjectContainer>;
+    return <ProjectContainer>Project does not exist</ProjectContainer>;
   }
 
   return (
     <ProjectContainer>
       <Title>{project.title}</Title>
       <Content>{project.content}</Content>
-      <BackLink to="/portfolio">返回项目列表</BackLink>
+      <BackLink to="/portfolio">Back to Project List</BackLink>
     </ProjectContainer>
   );
 }
