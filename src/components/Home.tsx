@@ -71,6 +71,27 @@ const Button = styled.button<{ opacity: number }>`
   }
 `;
 
+const DownloadButton = styled(Button)`
+  position: relative;
+  overflow: hidden;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover:after {
+    transform: translateY(0);
+  }
+`;
+
 function Home() {
   const [scrollOpacity, setScrollOpacity] = useState(0);
   const navigate = useNavigate();
@@ -91,6 +112,18 @@ function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleDownloadResume = () => {
+    const resumeUrl = '/path/to/your/resume.pdf';
+    window.open(resumeUrl, '_blank');
+
+    const link = document.createElement('a');
+    link.href = '/path/to/your/resume.pdf';
+    link.download = 'Siyuan_Zheng_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <PageWrapper opacity={scrollOpacity}>
       <HomeContainer>
@@ -101,7 +134,12 @@ function Home() {
             <ButtonContainer>
               <Button opacity={scrollOpacity} onClick={() => navigate('/About')}>About me</Button>
               <Button opacity={scrollOpacity} onClick={() => navigate('/Portfolio')}>My portfolio</Button>
-              <Button opacity={scrollOpacity}>Download resume</Button>
+              <DownloadButton 
+                opacity={scrollOpacity} 
+                onClick={handleDownloadResume}
+              >
+                Download resume
+              </DownloadButton>
               <Button opacity={scrollOpacity}>Contact me</Button>
             </ButtonContainer>
           </ContentSection>
