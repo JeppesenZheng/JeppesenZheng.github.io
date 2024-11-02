@@ -47,9 +47,7 @@ const ProjectGrid = styled.div`
 `;
 
 const projects = [
-  { id: '1', title: 'Project One', summary: 'This is a brief description of project one. This project demonstrates...' },
-  { id: '2', title: 'Project Two', summary: 'This is a brief description of project two. In this project, I...' },
-  { id: '3', title: 'Project Three', summary: 'This is a brief description of project three. Through this project, I learned...' },
+  { id: '1', title: 'Human Supported Robort (HSR) project', summary: 'HSR is a project that aims to create a human-supported robot that can assist with daily tasks and in different scenarios like kitchen, living room, etc.' },
 ];
 
 function Portfolio() {
