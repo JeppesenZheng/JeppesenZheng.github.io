@@ -1,4 +1,10 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
+export const Wrapper = styled.div`
+  position: relative;
+  width: 100%;
+`;
 
 export const Container = styled.div`
   max-width: 1200px;
@@ -209,4 +215,32 @@ export const GitHubSection = styled(Section)`
   text-align: center;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
+`;
+
+export const BackButton = styled(Link)`
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--accent-color);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 100;
+
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    opacity: 1 !important;
+  }
+
+  svg {
+    font-size: 1.2rem;
+  }
 `; 

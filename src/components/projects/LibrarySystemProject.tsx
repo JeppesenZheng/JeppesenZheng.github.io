@@ -1,11 +1,29 @@
-import React from 'react';
-import { FaReact, FaDatabase, FaGithub } from 'react-icons/fa';
+import React, { useState, useEffect } from 'react';
+import { FaReact, FaDatabase, FaGithub, FaArrowLeft } from 'react-icons/fa';
 import { SiSpringboot, SiTailwindcss } from 'react-icons/si';
 import * as S from '../../styles/ProjectStyles';
 
 function LibrarySystemProject() {
+  const [opacity, setOpacity] = useState(1);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const newOpacity = Math.max(1 - scrollPosition / 300, 0.2);
+      setOpacity(newOpacity);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <S.Container>
+    <S.Wrapper>
+      <S.BackButton to="/portfolio" style={{ opacity }}>
+        <FaArrowLeft />
+        Back
+      </S.BackButton>
+      
       <S.Title>Library System Project</S.Title>
       
       <S.Section>
@@ -106,7 +124,7 @@ function LibrarySystemProject() {
             View project frontend on GitHub
           </S.GitHubButton>
       </S.GitHubSection>
-    </S.Container>
+    </S.Wrapper>
   );
 }
 
