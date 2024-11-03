@@ -348,7 +348,7 @@ function About() {
                 <Tag>React</Tag>
                 <Tag>Node.js</Tag>
                 <Tag>MySQL</Tag>
-                <Tag>Express</Tag>
+                <Tag>Spring Boot</Tag>
               </ProjectTags>
             </ProjectItem>
           </List>
@@ -361,7 +361,7 @@ function About() {
               <SkillCategory>Frontend:</SkillCategory> React, TypeScript/JavaScript, HTML/CSS, Styled-Components
             </ListItem>
             <ListItem>
-              <SkillCategory>Backend:</SkillCategory> Node.js, Python, Express, MySQL, Firebase, Flask
+              <SkillCategory>Backend:</SkillCategory> Node.js, Python, Express, MySQL, Firebase, Flask, Spring Boot
             </ListItem>
             <ListItem>
               <SkillCategory>Tools:</SkillCategory> Git, AWS, Docker, Jenkins, Webpack
