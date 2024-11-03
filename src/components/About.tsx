@@ -314,7 +314,7 @@ function About() {
             <TimelineItem>
               <TimelinePeriod>2023/12 - 2024/02</TimelinePeriod>
               <TimelineContent>
-                <strong>Backedn Developer Intern</strong> <CompanyName>| Brokstacky</CompanyName>
+                <strong>Backend Developer Intern</strong> <CompanyName>| Brokstacky</CompanyName>
                 <p>• Developed a MES system for the industry, using python Flask to build the backend, and HTML, CSS, JavaScript for the frontend</p>
               </TimelineContent>
             </TimelineItem>
