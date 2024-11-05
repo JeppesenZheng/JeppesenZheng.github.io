@@ -302,20 +302,32 @@ function About() {
 
         <Section>
           <SectionTitle>Experience</SectionTitle>
-          <Timeline>
-            <TimelineItem>
-              <TimelinePeriod>2024 - Present</TimelinePeriod>
-              <TimelineContent>
-                <strong>Education Professional Computing</strong> <CompanyName>| UNSW College </CompanyName>
-                <p>• Tutoring DPST1091 (COMP1511 Programming Fundamentals)</p>
-              </TimelineContent>
-            </TimelineItem>
-
+            <Timeline>
             <TimelineItem>
               <TimelinePeriod>2023/12 - 2024/02</TimelinePeriod>
               <TimelineContent>
                 <strong>Backend Developer Intern</strong> <CompanyName>| Brokstacky</CompanyName>
                 <p>• Developed a MES system for the industry, using python Flask to build the backend, and HTML, CSS, JavaScript for the frontend</p>
+              </TimelineContent>
+            </TimelineItem>
+
+            <TimelineItem>
+              <TimelinePeriod>2023/10 - 2024/10</TimelinePeriod>
+              <TimelineContent>
+                <strong>Media and marketing director</strong> <CompanyName>| UNSW Skylabs</CompanyName>
+                <p>• Using Canva to create posters, logos and other design materials</p>
+                <p>• Using Adobe illustrator to make logos</p>
+                <p>• Using JavaScript and react framework to develop the unswskylabs website</p>
+                <p>• Managing unswskylabs facebook, Instagram and linkedIn</p>
+                <p>• Managing and developing the society's offical website</p>
+              </TimelineContent>
+            </TimelineItem>
+
+            <TimelineItem>
+              <TimelinePeriod>2024 - Present</TimelinePeriod>
+              <TimelineContent>
+                <strong>Education Professional Computing</strong> <CompanyName>| UNSW College </CompanyName>
+                <p>• Tutoring DPST1091 (COMP1511 Programming Fundamentals)</p>
               </TimelineContent>
             </TimelineItem>
           </Timeline>
