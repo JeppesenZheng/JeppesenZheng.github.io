@@ -140,7 +140,7 @@ function Home() {
               >
                 Download resume
               </DownloadButton>
-              <Button opacity={scrollOpacity}>Contact me</Button>
+              <Button opacity={scrollOpacity} onClick={() => navigate('/Contact')}>Contact me</Button>
             </ButtonContainer>
           </ContentSection>
         </ContentWrapper>
