@@ -363,6 +363,19 @@ function About() {
                 <Tag>Spring Boot</Tag>
               </ProjectTags>
             </ProjectItem>
+
+            <ProjectItem>
+              <ProjectTitle>
+                <strong>UNSW Skylabs Website</strong>
+                <ViewProjectButton to="/project/UNSWSkylabsWebsite">View Project</ViewProjectButton>
+              </ProjectTitle>
+              <p>A website for UNSW Skylabs, built with JavaScript and React framework</p>
+              <ProjectTags>
+                <Tag>JavaScript</Tag>
+                <Tag>React</Tag>
+                <Tag>Firebase</Tag>
+              </ProjectTags>
+            </ProjectItem>
           </List>
         </Section>
 

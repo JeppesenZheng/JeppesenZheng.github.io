@@ -8,6 +8,8 @@ import ProjectDetail from './components/ProjectDetail';
 import About from './components/About';
 import HSRProject from './components/projects/HSRProject';
 import LibrarySystemProject from './components/projects/LibrarySystemProject';
+import UNSWSkylabsWebsite from './components/projects/UNSWSkylabsWebsite';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/project/:id" element={<ProjectDetail />} />
         <Route path="/project/HSRProject" element={<HSRProject />} />
         <Route path="/project/LibrarySystemProject" element={<LibrarySystemProject />} />
+        <Route path="/project/UNSWSkylabsWebsite" element={<UNSWSkylabsWebsite />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
     </Router>
   );
