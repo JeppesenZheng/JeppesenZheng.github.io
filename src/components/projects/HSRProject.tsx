@@ -123,6 +123,21 @@ function HSRProject() {
           </S.ContributionGrid>
         </S.Section>
 
+        <S.Section>
+          <S.SectionTitle>
+            📄 Project Poster
+          </S.SectionTitle>
+          <S.Content style={{ textAlign: 'center' }}>
+            <S.DownloadButton 
+              href="/pdfs/blinky.pdf" 
+              download
+              style={{ backgroundColor: '#4CAF50' }}
+            >
+              📥 Download Project Poster
+            </S.DownloadButton>
+          </S.Content>
+        </S.Section>
+
         {/* <S.GitHubSection>
           <S.SectionTitle>
             <FaGithub />
