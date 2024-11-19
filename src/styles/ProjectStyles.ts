@@ -243,4 +243,11 @@ export const BackButton = styled(Link)`
   svg {
     font-size: 1.2rem;
   }
+`;
+
+export const DownloadButton = styled(GitHubButton)`
+  background-color: #4CAF50;
+  &:hover {
+    background-color: #45a049;
+  }
 `; 
