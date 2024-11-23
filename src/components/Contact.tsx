@@ -116,6 +116,30 @@ const ContactInfo = styled.div`
   }
 `;
 
+const EmailSection = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+`;
+
+const EmailBox = styled.div`
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  
+  h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    margin: 0;
+  }
+`;
+
 const BackButton = styled(Link)`
   position: fixed;
   top: 2rem;
@@ -269,7 +293,16 @@ const Contact: React.FC = () => {
           {status === 'error' && <ErrorMessage>{message}</ErrorMessage>}
         </ContactForm>
         <ContactInfo>
-          <p>Email: zhengsiyuan625@gmail.com</p>
+          <EmailSection>
+            <EmailBox>
+              <h3>Work Email</h3>
+              <p>zhengsiyuan625@gmail.com</p>
+            </EmailBox>
+            <EmailBox>
+              <h3>School Email</h3>
+              <p>siyuan.zheng1@student.unsw.edu.au</p>
+            </EmailBox>
+          </EmailSection>
           <p>Location: Sydney, Australia</p>
         </ContactInfo>
       </div>
